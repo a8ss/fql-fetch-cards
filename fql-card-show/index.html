@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fql</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card{
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid" id="app">
+    <h1>FQL</h1>
+    
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="countPage">共获取几页：</label>
+            <input type="text" class="form-control" id="countPage" placeholder="获取订单的前几页" value="1">
+        </div>
+        <button type="submit" id="startBtn" class="btn btn-primary">①获取订单</button>
+        <button type="button" id="startFetchCard" class="btn btn-info">②获取卡密</button>
+        <button type="button" id="copyAll" class="btn btn-success">③获取卡密</button>
+    </form>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>订单时间</th>
+            <th>订单号</th>
+            <th>名称+价格</th>
+            <th>卡密</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="order-date">2018-05-10 15:04:03</td>
+            <td class="order-id">O20180510048519102514(已还清)</td>
+            <td class="order-price">话费卡【大面额】 电信200元*5张 996.00</td>
+            <td class="order-cards"><p data-clipboard-text="123 232"><span class="card">0111001805070219882</span><span class="pwd">111048308625381898</span></p><p><span class="card">0111001825070019883</span><span class="pwd">111048308633451797</span></p><p><span class="card">0111001805070019884</span><span class="pwd">111048308048581891</span></p><p><span class="card">0111001805070019885</span><span class="pwd">111048301254681791</span></p><p><span class="card">0111001805070019886</span><span class="pwd">111048308494381793</span></p></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/axios.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/layer.js"></script>
+<script src="main.js"></script>
+</html>

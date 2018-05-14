@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "分期乐卡密提取助手",
+  "version": "0.01",
+  "description": "分期乐卡密提取助手",
+  "icons": {
+    "16": "images/favicon.ico"
+  },
+  "browser_action": {
+    "default_icon": "images/favicon.ico",
+    "default_title": "分期乐卡密提取助手"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "permissions": [
+    "https://*.fenqile.com/*",
+    "tabs"
+  ]
+ , "web_accessible_resources": [ "fql-card-show/index.html", "fql-card-show/js/*", "fql-card-show/css/*"]
+}
