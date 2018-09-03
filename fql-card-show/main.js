@@ -141,8 +141,8 @@ function getCard (smsCode) {
         td.append(p)
       })
       ++orderIndex
-      layer.msg('获取卡密成功，20秒后自动获取下一笔订单卡密');
-      setTimeout(sendSMS, 20000)
+      layer.msg('获取卡密成功，30秒后自动获取下一笔订单卡密');
+      setTimeout(sendSMS, 30000)
     } else {
       inputSMSCode('验证码错误')
     }
